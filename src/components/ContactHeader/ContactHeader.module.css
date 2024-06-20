@@ -1,0 +1,35 @@
+.contact_section h1{
+  font-size: 48px;
+  font-weight:800;
+  line-height: 72px;
+
+}
+.contact_section p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact_section h1 {
+    font-size: 36px; /* Reduces font size for smaller screens */
+    line-height: 54px; /* Adjusts line height proportionally */
+  }
+
+  .contact_section p {
+    font-size: 14px; /* Reduces font size for smaller screens */
+    line-height: 28px; /* Adjusts line height proportionally */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact_section h1 {
+    font-size: 28px; /* Further reduces font size for extra small screens */
+    line-height: 42px; /* Adjusts line height proportionally */
+  }
+
+  .contact_section p {
+    font-size: 12px; /* Further reduces font size for extra small screens */
+    line-height: 24px; /* Adjusts line height proportionally */
+  }
+}

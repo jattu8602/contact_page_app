@@ -1,0 +1,90 @@
+.container{
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+
+}
+.top_btn{
+  display: flex;
+  gap: 32px;
+
+}
+.contact_form form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact_form{
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+}
+.form_control{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+
+
+}
+.form_control input{
+  height: 40px;
+  padding: 0 8px;
+
+
+}
+.form_control label{
+  font-size: 14px;
+  position: absolute;
+  top: -12px;
+  left: 10px;
+  background-color: white;
+  padding: 0 10px;
+}
+.form_control textarea{
+  resize: none;
+  padding: 10px 10px;
+
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    margin-top: 50px; /* Reduces top margin for smaller screens */
+  }
+
+  .top_btn {
+    gap: 16px; /* Reduces gap between buttons on smaller screens */
+  }
+
+  .form_control input,
+  .form_control textarea {
+    font-size: 14px; /* Reduces font size for smaller inputs */
+  }
+
+  .form_control label {
+    font-size: 12px; /* Reduces label font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 20px; /* Further reduces top margin for extra small screens */
+  }
+
+  .top_btn {
+    gap: 8px; /* Further reduces gap between buttons on extra small screens */
+  }
+
+  .form_control input,
+  .form_control textarea {
+    font-size: 12px; /* Further reduces font size for extra small inputs */
+  }
+
+  .form_control label {
+    font-size: 10px; /* Further reduces label font size for extra small screens */
+  }
+}

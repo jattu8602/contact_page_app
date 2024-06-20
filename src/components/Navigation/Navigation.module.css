@@ -1,0 +1,60 @@
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  height: 72px;
+
+}
+.navigation ul{
+  display: flex;
+  list-style: none;
+  /* padding-right: 300px; */
+  gap: 24px;
+  font-weight: 500;
+}
+.navigation ul li a{
+  text-decoration: none;
+
+  color: black;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navigation {
+    padding: 0 12px; /* Adjust padding for smaller screens */
+  }
+
+  .navigation ul {
+    gap: 16px; /* Reduce gap for smaller screens */
+  }
+
+  .navigation ul li a {
+    font-size: 16px; /* Reduce font size for smaller screens */
+    padding: 8px 16px; /* Adjust padding for better fit */
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: flex-start; /* Align items to the start */
+    height: auto; /* Allow height to adjust automatically */
+    padding: 0 8px; /* Further adjust padding for extra small screens */
+  }
+
+  .navigation ul {
+    flex-direction: column; /* Stack list items vertically */
+    gap: 12px; /* Further reduce gap */
+    width: 100%; /* Make ul take full width */
+  }
+
+  .navigation ul li a {
+    font-size: 14px; /* Further reduce font size */
+    padding: 8px 12px; /* Adjust padding for better fit */
+    width: 100%; /* Make links take full width */
+    text-align: left; /* Align text to the left */
+  }
+}
